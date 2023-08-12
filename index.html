@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link da Bio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8769B;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            max-width: 400px;
+        }
+        .profile-image {
+            width: 125px;
+            height: 125px;
+            border-radius: 90%;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .bio {
+            font-size: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #3FEC52;
+            color: #000000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        const phoneNumbers = [
+            "https://api.whatsapp.com/send/?phone=5535998841537&text=Oiie+qual+valor+dos+conteúdos+ou+chamada%3F&type=phone_number&app_absent=0",
+            "https://api.whatsapp.com/send/?phone=5535998841537&text=Oiie+qual+valor+dos+conteúdos+ou+chamada%3F&type=phone_number&app_absent=0",
+            "https://api.whatsapp.com/send/?phone=5535998841537&text=Oiie+qual+valor+dos+conteúdos+ou+chamada%3F&type=phone_number&app_absent=0"
+            // Adicione mais números conforme necessário
+        ];
 
+        // Defina a quantidade de cliques para a rotação de cada número de telefone
+        const clicksToRotate = 1;
+
+        let currentNumberIndex = 0;
+        let clickCount = 0;
+
+        function rotatePhoneNumber() {
+            clickCount++;
+            if (clickCount >= clicksToRotate) {
+                clickCount = 0;
+                currentNumberIndex = (currentNumberIndex + 1) % phoneNumbers.length;
+                document.querySelector(".button").href = phoneNumbers[currentNumberIndex];
+            }
+        }
+
+        function resetIndexAtMidnight() {
+            const now = new Date();
+            if (now.getHours() === 0 && now.getMinutes() === 0) {
+                currentNumberIndex = 0;
+                document.querySelector(".button").href = phoneNumbers[currentNumberIndex];
+            }
+        }
+
+        setInterval(resetIndexAtMidnight, 60000); // Verificar a cada minuto (60000 ms) se é meia-noite
+    </script>
+    <style>
+        /* Estilos do rodapé */
+        .division-ALBqaI1166235__wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        #division-ALBqaI1166235 {
+            position: relative;
+            padding: 3vh 20vw 3vh 20vw;
+            background-color: #FC789E;
+        }
+        @media (max-width: 1200px) {
+            #division-ALBqaI1166235 {
+                padding: 1.5vh 10vw 1.5vh 10vw;
+            }
+        }
+        @media (max-width: 600px) {
+            #division-ALBqaI1166235 {
+                padding: 6vh 1.5vw 0.75vh 1.5vw;
+            }
+        }
+        .footer-BepGow1342175-element {
+            text-align: center;
+            font-size: 1.20vw;
+            color: #ffffff;
+        }
+        .footer-BepGow1342175-element a {
+            padding: 0 !important;
+            color: #ffffff !important;
+        }
+        @media (max-width: 1200px) {
+            .footer-BepGow1342175-element {
+                text-align: center;
+                font-size: 1.95vw;
+                color: #ffffff;
+            }
+        }
+        @media (max-width: 640px) {
+            .footer-BepGow1342175-element {
+                text-align: center;
+                font-size: 3.30vw;
+                color: #ffffff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="profile-image" src="https://cdn.discordapp.com/attachments/1132027787742560267/1136101348719472810/WhatsApp_Image_2023-07-20_at_18.26.51.jpeg" alt="Foto do Perfil">
+        <div class="name" contenteditable>Vem ver meus contéudos quentes🔥</div>
+        <div class="bio" contenteditable>Clique abaixo pra COMPRAR agora no Whatsapp👇</div>
+        <a class="button" href="https://api.whatsapp.com/send/?phone=5535998841537&text=Oiie+qual+valor+dos+conteúdos+ou+chamada%3F&type=phone_number&app_absent=0" onclick="rotatePhoneNumber()">COMPRAR PACOTES NO ZAP</a>
+    </div>
+
+    <!-- Início do rodapé -->
+    <div class="division-ALBqaI1166235__wrapper">
+        <style>
+            /* Estilos CSS do rodapé */
+        </style>
+        <div id="division-ALBqaI1166235" class="KkYaBI2568198">
+            <div class="footer-BepGow1342175">
+                <footer class="footer-BepGow1342175-element">
+                    <p><strong></strong></p>
+                    <p style="margin-top: 4px;"></p>
+                    <div style="display: flex; align-items: center; justify-content: center; margin-top: 24px;">
+                        <a id="t" style="margin-right: 12px" href="#">
+                            Termos e Condições
+                        </a>
+                        <span style="margin-right: 12px">·</span>
+                        <a id="p" href="#">
+                            Termos e Serviços
+                        </a>
+                    </div>
+                    <p style="margin-top: 24px;"></p>
+                    <script>
+                        const pr = window.location.href + "/privacidade",
+                            te = window.location.href + "/termos";
+                        document.getElementById("p").setAttribute("href", pr), document.getElementById("t").setAttribute("href", te);
+                    </script>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do rodapé -->
+
+    <script src="js/HSPBQv2571941.js" charset="utf-8"></script>
+</body>
+</html>
